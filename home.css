@@ -1,0 +1,465 @@
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url('https://images2.alphacoders.com/135/1351715.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Black blur background */
+    z-index: -1; /* Ensure the background is behind other content */
+    pointer-events: none; /* Allow clicks to pass through the background */
+}
+
+.container {
+  width: 100%;
+  height: 50px;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  position: absolute;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.logo {
+  background: url(../img/icon.png) no-repeat;
+  margin-left: 30px;
+  height: 54px;
+  width: 110px;
+  float: left;
+  background-position: 0 0px;
+}
+
+.navbar {
+  float: right;
+  margin: 5px 20px 0 0
+}
+
+.navbar li {
+  float: left;
+  height: 42px;
+  line-height: 42px;
+  margin: 0 15px;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 0;
+  font-weight: bold;
+  position: relative;
+}
+
+.navbar li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  border-bottom: 2px solid #fff;
+  transition: 0.4s;
+}
+
+.navbar li a:hover::after {
+  width: 100%;
+}
+
+.nav-fixed {
+  position: fixed;
+  padding: 5px 0;
+  background: #fff;
+}
+
+.nav-fixed .logo {
+  background-position: 0 -82px;
+}
+
+.nav-fixed li a {
+  color: #000;
+}
+
+.nav-fixed li a::after {
+  border-bottom: 2px solid #000;
+}
+
+
+
+
+.carousel-title {
+    color: white;
+    text-align: center;
+    font-size: 48px; /* Increase font size */
+    margin-top: 20px; /* Adjust as needed */
+    font-family: 'IM Fell English SC', serif; /* Apply fantasy font */
+    position: absolute;
+    top: 950px; /* Adjust the distance from the top */
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold; /* Make the font bold */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Apply fade highlight */
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    padding: 10px 20px; /* Add padding for better visibility */
+    border-radius: 10px; /* Add border radius for rounded corners */
+}
+
+  .carousel-container {
+    position: relative;
+    width: 100%; /* Full width */
+    height: 900px; /* Adjust the height as needed */
+    overflow: hidden;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    top: 850px
+  }
+  
+  .carousel-wrapper {
+    display: flex;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    padding-top: 40px; /* Adjust the padding as needed */
+}
+
+
+  .carousel-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .carousel {
+    display: flex;
+    scroll-snap-align: start; /* Snap to start of each manhwa */
+  }
+  
+
+
+  
+  .manhwa {
+    flex: 0 0 auto; /* Ensure fixed width for each manhwa */
+    width: 250px; /* Adjust the width as needed */
+    margin-right: 20px; /* Adjust the gap between manhwas */
+    scroll-snap-align: start; /* Snap to start of each manhwa */
+  }
+  
+  .manhwa:last-child {
+    margin-right: 0; /* Remove margin for the last manhwa */
+  }
+  
+  .manhwa img {
+    width: 100%;
+    height: 350px;
+
+  }
+  
+  .manhwa-title {
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .manhwa-info {
+    background-color: rgba(0, 0, 0, 1); /* Adjust the alpha value for desired transparency */
+    padding: 10px; /* Add padding as needed */
+    border-radius: 5px; /* Add border radius for rounded corners */
+  }
+  
+  .manhwa-title {
+    color: white; /* Set text color to contrast with the background */
+  }
+
+  .manhwa-link {
+    display: block; /* Make the anchor tag a block element */
+    text-decoration: none; /* Remove default underline */
+}
+
+.manhwa:hover {
+  transform: scale(1.1); /* Increase the scale on hover */
+}
+
+  
+  
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    z-index: 1; /* Ensure the buttons appear above the carousel */
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+  
+  
+
+
+.img {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+
+
+  .center {
+    position: absolute;
+    top: 170px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+  }
+
+ .center .title {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+input[type=radio] {
+  display: none;
+}
+
+.card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: transform .4s ease;
+  cursor: pointer;
+}
+
+.slide-container {
+    width: 100%;
+    max-width: 1000px;
+    max-height: 600px;
+    height: 100%;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: absolute;
+    top: 500px; /* Adjust this value to move the container down */
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+  
+
+.cards {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+#item-1:checked ~ .cards #carousel-3, #item-2:checked ~ .cards #carousel-1, #item-3:checked ~ .cards #carousel-2 {
+  transform: translatex(-40%) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-1:checked ~ .cards #carousel-2, #item-2:checked ~ .cards #carousel-3, #item-3:checked ~ .cards #carousel-1 {
+  transform: translatex(40%) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-1:checked ~ .cards #carousel-1, #item-2:checked ~ .cards #carousel-2, #item-3:checked ~ .cards #carousel-3 {
+  transform: translatex(0) scale(1);
+  opacity: 1;
+  z-index: 1;
+  
+  img {
+    box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+  }
+}
+
+.player {
+  background-color: #fff;
+  border-radius: 8px;
+  min-width: 320px;
+  padding: 16px 10px;
+}
+
+.upper-part {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  height: 36px;
+  overflow: hidden;
+}
+
+.new {
+  background: url(img/icon.png) no-repeat;
+  width: 30px;
+  height: 22px;
+  background-position: 0 -560px;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.main {
+  position: relative;
+  top: 600px;
+  backdrop-filter: blur(10px);
+}
+
+.main-nav {
+  text-align: center;
+  background: #201771;
+  backdrop-filter: blur(20px);
+}
+
+.main-nav li {
+  font-size: 15px;
+  display: inline-block;
+  line-height: 75px;
+  margin: 0 40px;
+  height: 75px;
+}
+
+.main-nav li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #ffffff; /* Change font color to bright color */
+}
+
+.main-nav li a:hover {
+  color: #000;
+  text-decoration: underline;
+  backdrop-filter: blur(10px);
+}
+
+.mangas {
+  width: 100%;
+  overflow: hidden;
+}
+
+.button2 {
+  width: 200px;
+  margin: 15px auto 0;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #fff;
+}
+
+.button2 a {
+  display: block;
+  color: #f2f2f2;
+  text-decoration: none;
+  padding: 10px 10px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.button2:hover {
+  font-weight: bold;
+  border: 3px dashed #fff;
+}
+
+.manga-category {
+  float: left;
+  color: #fff;
+  width: 20%;
+  height: 425px;
+  box-sizing: border-box;
+  backdrop-filter: blur(10px);
+}
+
+.manga-category h1 {
+  text-align: center;
+  margin: 130px auto 0;
+  font-size: 30px;
+  width: 200px;
+}
+
+.manga-content {
+  width: auto;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
+
+.list-wrap {
+  float: left;
+  height: 425px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.manga-list li {
+  float: left;
+  margin-left: 58px;
+  width: 250px;
+}
+
+.manga-list li:hover {
+  transform: scale(1.1); /* Increase scale on hover */
+}
+
+.manga-list li a {
+  text-decoration: none;
+  display: block;
+  position: relative;
+  color: #000;
+  text-align: center;
+  background: #fff;
+  line-height: 30px;
+  width: 100%;
+}
+
+.manga-content ul {
+  overflow: hidden;
+  height: 340px;
+  position: absolute;
+  top: 35px;
+}
+

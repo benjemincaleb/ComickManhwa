@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #EEEDEB;
+    /*    background: url('https://images2.alphacoders.com/135/1351715.jpeg') no-repeat center center fixed;    */
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+
+
+.random-shape {
+  position: absolute;
+  background-color: #BAC5A4;
+  border-radius: 50%; /* Make them circles */
+  pointer-events: none; /* Prevent shapes from capturing pointer events */
+}
+
+
+.random-shape.circle {
+  border-radius: 50%; /* Make the shape a circle */
+}
+
+.random-shape.triangle {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent; /* Adjust size as needed */
+  border-right: 50px solid transparent; /* Adjust size as needed */
+  border-bottom: 100px solid #BAC5A4; /* Adjust size and color as needed */
+}
+
+
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    width: 200px;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+}
+
+.search-btn {
+    background: #fff;
+    color: #000;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 26px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+    background-color: #ccc;
+}
+
+
+
+
+
+.carousel-title {
+    color: white;
+    text-align: center;
+    font-size: 48px; /* Increase font size */
+    margin-top: 20px; /* Adjust as needed */
+    font-family: 'IM Fell English SC', serif; /* Apply fantasy font */
+    position: absolute;
+    top: 950px; /* Adjust the distance from the top */
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold; /* Make the font bold */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Apply fade highlight */
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    padding: 10px 20px; /* Add padding for better visibility */
+    border-radius: 10px; /* Add border radius for rounded corners */
+}
+
+
+
+nav {
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: 12;
+    width: 100%;
+    background-color:    rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    padding: 5px 0; /* Adjust padding as needed */
+}
+
+  
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+ 
+
+
+  .menu .logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+  }
+  
+  .menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu ul li {
+    margin-left: 25px;
+}
+
+.menu ul li:first-child {
+    margin-left: 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.menu ul li a:hover {
+    color: #ccc;
+}
+
+  .carousel-container {
+    position: relative;
+    width: 100%; /* Full width */
+    height: 900px; /* Adjust the height as needed */
+    overflow: hidden;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    top: 850px
+  }
+  
+  .carousel-wrapper {
+    display: flex;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    padding-top: 40px; /* Adjust the padding as needed */
+}
+
+
+  .carousel-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .carousel {
+    display: flex;
+    scroll-snap-align: start; /* Snap to start of each manhwa */
+  }
+  
+
+
+  
+  .manhwa {
+    flex: 0 0 auto; /* Ensure fixed width for each manhwa */
+    width: 250px; /* Adjust the width as needed */
+    margin-right: 20px; /* Adjust the gap between manhwas */
+    scroll-snap-align: start; /* Snap to start of each manhwa */
+  }
+  
+  .manhwa:last-child {
+    margin-right: 0; /* Remove margin for the last manhwa */
+  }
+  
+  .manhwa img {
+    width: 100%;
+    height: 350px;
+
+  }
+  
+  .manhwa-title {
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .manhwa-info {
+    background-color: rgba(0, 0, 0, 1); /* Adjust the alpha value for desired transparency */
+    padding: 10px; /* Add padding as needed */
+    border-radius: 5px; /* Add border radius for rounded corners */
+  }
+  
+  .manhwa-title {
+    color: white; /* Set text color to contrast with the background */
+  }
+
+  .manhwa-link {
+    display: block; /* Make the anchor tag a block element */
+    text-decoration: none; /* Remove default underline */
+}
+
+.manhwa:hover {
+  transform: scale(1.1); /* Increase the scale on hover */
+}
+
+  
+  
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    z-index: 1; /* Ensure the buttons appear above the carousel */
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+  
+  
+
+
+.img {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+
+
+  .center {
+    position: absolute;
+    top: 170px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+  }
+
+ .center .title {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+input[type=radio] {
+  display: none;
+}
+
+.card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: transform .4s ease;
+  cursor: pointer;
+}
+
+.slide-container {
+    width: 100%;
+    max-width: 1000px;
+    max-height: 600px;
+    height: 100%;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: absolute;
+    top: 500px; /* Adjust this value to move the container down */
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+  
+
+.cards {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+#item-1:checked ~ .cards #carousel-3, #item-2:checked ~ .cards #carousel-1, #item-3:checked ~ .cards #carousel-2 {
+  transform: translatex(-40%) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-1:checked ~ .cards #carousel-2, #item-2:checked ~ .cards #carousel-3, #item-3:checked ~ .cards #carousel-1 {
+  transform: translatex(40%) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-1:checked ~ .cards #carousel-1, #item-2:checked ~ .cards #carousel-2, #item-3:checked ~ .cards #carousel-3 {
+  transform: translatex(0) scale(1);
+  opacity: 1;
+  z-index: 1;
+  
+  img {
+    box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+  }
+}
+
+.player {
+  background-color: #fff;
+  border-radius: 8px;
+  min-width: 320px;
+  padding: 16px 10px;
+}
+
+.upper-part {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  height: 36px;
+  overflow: hidden;
+}
+

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="home.css">
+    <script src="home.js"></script>
+</head>
+<body>
+    <div class="container">
+        <a class="logo" href="#"></a>
+        <nav>
+          <ul class="navbar">
+            <li><a href="#">Latest Releases<i class="new"></i></a></li>
+            <li><a href="#">Hot Manhwa</a></li>
+            <li><a href="#">Manhwa Directory</a></li>
+            <li><a href="#">Completed Manhwa</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </nav>
+    </div>
+
+
+    
+    <div class="img">
+        <div class="slide-container">
+            <input type="radio" name="slider" id="item-1" checked>
+            <input type="radio" name="slider" id="item-2">
+            <input type="radio" name="slider" id="item-3">
+            <input type="radio" name="slider" id="item-4">
+            <input type="radio" name="slider" id="item-5">
+            <div class="cards">
+                <label class="card" for="item-1" id="carousel-1">
+                    <img src="https://images8.alphacoders.com/113/1135889.jpg" alt="TBATE">
+                </label>
+                <label class="card" for="item-2" id="carousel-2">
+                    <img src="https://i0.wp.com/news.qoo-app.com/en/wp-content/uploads/sites/3/2023/03/Solo_Leveling_Arise_Website_Feature-1-1.jpg?fit=1200%2C678&amp;ssl=1" alt="Solo Leveling">
+                </label>
+                <label class="card" for="item-3" id="carousel-3">
+                    <img src="https://i.ytimg.com/vi/8bIdmLiNFfI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB-ezDGD7Jbjq-pimiRTmj0HWcpgw" alt="Nano Machine">
+                </label>
+                
+            </div>
+        </div>
+        
+
+
+        <p class="carousel-title">Our Top Trending Manhwa</p>
+
+        <div class="carousel-container">
+            <button class="prev" onclick="scrollManhwas('prev')">&#10094;</button>
+            <div class="carousel-wrapper">
+            <div class="carousel">
+    
+                <div class="manhwa">
+                    <a href="https://comick.io/comic/00-solo-leveling/P_ysNE3VbnLbwN-chapter-0-en" class="manhwa-link">
+                    <img src="https://meo.comick.pictures/0GRgd-m.jpg" alt="Manhwa 1">
+                    <div class="manhwa-info">
+                        <h3 class="manhwa-title">Solo Leveling</h3>
+                    </div> 
+                    </a>
+                </div>
+
+                <div class="manhwa">
+                    <a href="https://comick.io/comic/00-the-beginning-after-the-end-1/r5bcQ_C5-chapter-1-en" class="manhwa-link"></a>
+                    <img src="https://meo.comick.pictures/r2xa1-m.jpg" alt="Manhwa 2">
+                <div class="manhwa-info">
+                    <h3 class="manhwa-title">The Beginning After the End</h3>
+                </div> 
+                </div>
+                <!-- Add more manhwas here -->
+                <div class="manhwa">
+                    <a href="https://comick.io/comic/03-return-of-the-iron-blooded-hound/vtmmRcpa-chapter-1-en" class="manhwa-link"></a>
+                    <img src="https://meo.comick.pictures/gODxg-m.jpg" alt="Manhwa 2">
+                <div class="manhwa-info">
+                    <h3 class="manhwa-title">Revenge of the Iron-Blooded Sword Hound</h3>
+                </div> 
+                </div>
+    
+                <div class="manhwa">
+                    <a href="https://comick.io/comic/02-omniscient-reader-s-viewpoint/0jLxN-chapter-0-en" class="manhwa-link"></a>
+                    <img src="https://meo.comick.pictures/p7j8l-m.jpg" alt="Manhwa 2">
+                <div class="manhwa-info">
+                    <h3 class="manhwa-title">Omniscient Reader's Viewpoint</h3>
+                </div> 
+                </div>
+    
+                <div class="manhwa">
+                    <a href="https://comick.io/comic/02-damn-reincarnation/Dpraw9eb-chapter-1-en" class="manhwa-link"></a>
+                    <img src="https://meo.comick.pictures/o0ovy-m.jpg" alt="Manhwa 2">
+                <div class="manhwa-info">
+                    <h3 class="manhwa-title">Damn Reincarnation</h3>
+                </div> 
+                </div>
+    
+                <div class="manhwa">
+                    <a href="https://comick.io/comic/01-mercenary-enrollment/iTMLX5EE-chapter-0-en" class="manhwa-link"></a>
+                    <img src="https://meo.comick.pictures/rxG82.jpg" alt="Manhwa 2">
+                <div class="manhwa-info">
+                    <h3 class="manhwa-title">Mercenary Enrollment</h3>
+                </div> 
+                </div>
+    
+                <div class="manhwa">
+                    <a href="https://comick.io/comic/00-player-who-returned-10-000-years-later/v3MxJaHbGpdMGJ-chapter-1-en" class="manhwa-link"></a>
+                    <img src="https://meo.comick.pictures/7qdXk-m.jpg" alt="Manhwa 2">
+                <div class="manhwa-info">
+                    <h3 class="manhwa-title">Player Who Returned 10,000 Years Later</h3>
+                </div> 
+                </div>
+    
+                <div class="manhwa">
+                    <a href="#" class="manhwa-link"></a>
+                    <img src="https://meo.comick.pictures/MRpQQ-641aabf1-c6b9-4f7c-a812-a566d4c01ca8-m.jpg" alt="Manhwa 2">
+                <div class="manhwa-info">
+                    <h3 class="manhwa-title">I’m the Max-Level Newbie</h3>
+                </div> 
+                </div>
+    
+                <div class="manhwa">
+                    <a href="#" class="manhwa-link"></a>
+                    <img src="https://meo.comick.pictures/mnWxYo-m.jpg" alt="Manhwa 2">
+                <div class="manhwa-info">
+                    <h3 class="manhwa-title">The Greatest Estate Developer</h3>
+                </div> 
+                </div>
+    
+                <div class="manhwa">
+                    <a href="#" class="manhwa-link"></a>
+                <img src="https://meo.comick.pictures/73yqk-m.jpg" alt="Manhwa 2">
+                <div class="manhwa-info">
+                    <h3 class="manhwa-title">The Swordmaster's Son</h3>
+                </div> 
+    
+                </div>
+                <div class="manhwa">
+                    <a href="#" class="manhwa-link"></a>
+                <img src="https://meo.comick.pictures/N67Brv.jpg" alt="Manhwa 2">
+                <div class="manhwa-info">
+                    <h3 class="manhwa-title">The Academy's Genius Swordsman</h3>
+                </div> 
+    
+                </div>
+                <div class="manhwa">
+                    <a href="#" class="manhwa-link"></a>
+                <img src="https://meo.comick.pictures/ze6K4-m.jpg" alt="Manhwa 2">
+                <div class="manhwa-info">
+                    <h3 class="manhwa-title">Nano Machine</h3>
+                </div> 
+    
+                </div>
+                <div class="manhwa">
+                    <a href="#" class="manhwa-link"></a>
+                <img src="https://tse1.mm.bing.net/th?q=trash%20of%20the%20count%27s%20family%20chapter%2093" alt="Manhwa 2">
+                <div class="manhwa-info">
+                    <h3 class="manhwa-title">Lout of Count's Family</h3>
+                </div> 
+    
+                </div>
+            </div>
+            </div>
+            <button class="next" onclick="scrollManhwas('next')">&#10095;</button>
+        </div>
+
+    </div>
+
+    <section class="main">
+        <nav>
+          <ul class="main-nav">
+            <li><a href="#">ROMANCE</a></li>
+            <li><a href="#">COMEDY</a></li>
+            <li><a href="#">SHOUJO</a></li>
+            <li><a href="#">VAMPIRE</a></li>
+            <li><a href="#">HORROR</a></li>
+            <li><a href="#">SEINEN</a></li>
+            <li><a href="#">YOUKAI</a></li>
+            <li><a href="#">ADVENTURE</a></li>
+            <li><a href="#">HAREM</a></li>
+          </ul>
+        </nav>
+        <div class="mangas">
+          <div class="manga-category">
+            <h1>HOT MANHWA</h1>
+            <div class="button2">
+              <a href="#">READ MORE</a>
+            </div>
+          </div>
+            <div class="manga-content">
+              <div class="list-wrap">
+                <div class="jspContainer">
+                  <ul class="manga-list">
+                  <li>
+                    <a href="https://comick.io/comic/01-time-limited-genius-dark-knight/Fu2UM5AN-chapter-1-en"><img src="https://meo.comick.pictures/LylyRX-m.jpg"></a>
+                    <a href="#">Time-Limited Genius Dark Knight</a>
+                  </li>
+                  <li>
+                    <a href="https://comick.io/comic/03-nano-machine/Dupe8YZe-chapter-1-en"><img src="https://meo.comick.pictures/ze6K4-m.jpg"></a>
+                    <a href="#">Nano Machine</a>
+                  </li>
+                  <li>
+                    <a href="https://comick.io/comic/02-pick-me-up-1/1qUXck5t-chapter-1-en"><img src="https://meo.comick.pictures/yYxBXn-m.jpg"></a>
+                    <a href="#">Pick Me Up</a>
+                  </li>
+                  <li>
+                    <a href="https://comick.io/comic/00-the-villain-of-destiny/M2ooP-chapter-0-en"><img src="https://meo.comick.pictures/lqpNz-m.jpg"></a>
+                    <a href="#">I Am the Fated Villain</a>
+                  </li>
+                  <li>
+                    <a href="https://comick.io/comic/02-jungle-juice/JkPzy-chapter-1-en"><img src="https://meo.comick.pictures/YgEyK4-m.jpg"></a>
+                    <a href="#">Jungle Juice</a>
+                  </li>
+                  <li>
+                    <a href="https://comick.io/comic/the-count-s-youngest-son-is-a-player/9UfmFY92-chapter-1-en"><img src="https://meo.comick.pictures/7yJxLB.jpg"></a>
+                    <a href="#">The Count’s Youngest Son Is a Player</a>
+                  </li>
+                  
+                </ul>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="mangas">
+          <div class="manga-category">
+            <h1>FEATURED MANHWA</h1>
+            <div class="button2">
+              <a href="#">READ MORE</a>
+            </div>
+          </div>
+          <div class="manga-content">
+            <div class="list-wrap">
+              <div class="jspContainer">
+                <ul class="manga-list">
+                  <li>
+                    <a href="https://comick.io/comic/01-the-bully-in-charge/6Akvz-chapter-0-en"><img src="https://meo.comick.pictures/07yKY.jpg"></a>
+                    <a href="#">Designated Bully</a>
+                  </li>
+                  <li>
+                    <a href="https://comick.io/comic/un-ordinary/RXnMY-chapter-0-en"><img src="https://meo.comick.pictures/n5k5Xm-m.jpg"></a>
+                    <a href="#">unOrdinary</a>
+                  </li>
+                  <li>
+                    <a href="https://comick.io/comic/02-juvenile-offender/_FwHdeMx-chapter-1-en"><img src="https://meo.comick.pictures/ey8oE-m.jpg"></a>
+                    <a href="#">Juvenile Offender</a>
+                  </li>
+                  <li>
+                    <a href="https://comick.io/comic/00-hero-killer/4nzD0-chapter-1-en"><img src="https://meo.comick.pictures/5pkMMx.jpg"></a>
+                    <a href="#">Hero Killer</a>
+                  </li>
+                  <li>
+                    <a href="https://comick.io/comic/executioner/9Aaiujfi-chapter-1-en"><img src="https://meo.comick.pictures/Z8nyO3-m.jpg"></a>
+                    <a href="#">Executioner</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mangas">
+          <div class="manga-category">
+            <h1>NEW MANHWA</h1>
+            <div class="button2">
+              <a href="#">READ MORE</a>
+            </div>
+          </div>
+          <div class="manga-content">
+            <div class="list-wrap">
+              <div class="jspContainer">
+                <ul class="manga-list">
+                  <li>
+                    <a href="https://comick.io/comic/kaoru-hana-wa-rin-to-saku/QQ5uYRW5-chapter-1-en"><img src="https://meo.comick.pictures/Jn76Za-m.jpg"></a>
+                    <a href="#">The Fragrant Flower Blooms With Dignity</a>
+                  </li>
+                  <li>
+                    <a href="https://comick.io/comic/avenger-of-mystical-eyes-blood-parasite/lSvSUzSP-chapter-0-en"><img src="https://meo.comick.pictures/LylL2o-m.jpg"></a>
+                    <a href="#">Blood Parasite</a>
+                  </li>
+                  <li>
+                    <a href="https://comick.io/comic/02-castle-2-pinnacle/1teiSrzM-chapter-0-en"><img src="https://meo.comick.pictures/L655R-m.jpg"></a>
+                    <a href="#">Castle 2: Pinnacle</a>
+                  </li>
+                  <li>
+                    <a href="https://comick.io/comic/02-the-world-after-the-fall/0j8jL-chapter-0-en"><img src="https://meo.comick.pictures/vo82y-m.jpg"></a>
+                    <a href="#">The World After the Fall</a>
+                  </li>
+                  <li>
+                    <a href="https://comick.io/comic/00-i-obtained-a-mythic-item/RVDJL1-chapter-0-en"><img src="https://meo.comick.pictures/3MmRZ-m.jpg"></a>
+                    <a href="#">I Obtained a Mythic Item</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+
+</body>
+</html>

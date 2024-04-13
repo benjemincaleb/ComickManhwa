@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="manhwa.css">
+    <script src="manhwa.js"></script>
+</head>
+<body>
+
+    <nav>
+        <div class="menu">
+          <div class="logo">
+            <a href="home.html">ComickManhwa</a>
+          </div>
+            <form action="" class="search-bar">
+                <input type="search" name="search" pattern=".*\S.*">
+                <button class="search-btn" type="submit">
+                    <span>Search</span>
+                </button>
+            </form>
+            <ul>
+                <li><a href="index.html"><img src="home_icon.png" alt="Home"></a></li>
+                <li><a href="#"><img src="about_icon.png" alt="About"></a></li>
+                <li><a href="#"><img src="icons8-language-32.png" alt="Language"></a></li>
+                <li><a href="login.html"><img src="icons8-user-48.png" alt="Login"></a></li>
+                <li><a href="login.html"><img src="icons8-dropdown-50.png" alt="Drop"></a></li>
+            </ul>
+            
+        </div>
+    </nav>
+
+
+    
+    <div class="img">
+        <div class="slide-container">
+            <input type="radio" name="slider" id="item-1" checked>
+            <input type="radio" name="slider" id="item-2">
+            <input type="radio" name="slider" id="item-3">
+            <input type="radio" name="slider" id="item-4">
+            <input type="radio" name="slider" id="item-5">
+            <div class="cards">
+                <label class="card" for="item-1" id="carousel-1">
+                    <img src="https://images8.alphacoders.com/113/1135889.jpg" alt="TBATE">
+                </label>
+                <label class="card" for="item-2" id="carousel-2">
+                    <img src="https://i0.wp.com/news.qoo-app.com/en/wp-content/uploads/sites/3/2023/03/Solo_Leveling_Arise_Website_Feature-1-1.jpg?fit=1200%2C678&amp;ssl=1" alt="Solo Leveling">
+                </label>
+                <label class="card" for="item-3" id="carousel-3">
+                    <img src="https://i.ytimg.com/vi/8bIdmLiNFfI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB-ezDGD7Jbjq-pimiRTmj0HWcpgw" alt="Nano Machine">
+                </label>
+                
+            </div>
+        </div>
+        
+
+
+        <p class="carousel-title">Our Top Trending Manhwa</p>
+
+        <div class="carousel-container">
+            <button class="prev" onclick="scrollManhwas('prev')">&#10094;</button>
+            <div class="carousel-wrapper">
+            <div class="carousel">
+    
+                <div class="manhwa">
+                    <a href="https://comick.io/comic/00-solo-leveling/P_ysNE3VbnLbwN-chapter-0-en" class="manhwa-link">
+                    <img src="https://meo.comick.pictures/0GRgd-m.jpg" alt="Manhwa 1">
+                    <div class="manhwa-info">
+                        <h3 class="manhwa-title">Solo Leveling</h3>
+                    </div> 
+                    </a>
+                </div>
+
+                <div class="manhwa">
+                    <a href="https://comick.io/comic/00-the-beginning-after-the-end-1/r5bcQ_C5-chapter-1-en" class="manhwa-link"></a>
+                    <img src="https://meo.comick.pictures/r2xa1-m.jpg" alt="Manhwa 2">
+                <div class="manhwa-info">
+                    <h3 class="manhwa-title">The Beginning After the End</h3>
+                </div> 
+                </div>
+                <!-- Add more manhwas here -->
+                <div class="manhwa">
+                    <a href="https://comick.io/comic/03-return-of-the-iron-blooded-hound/vtmmRcpa-chapter-1-en" class="manhwa-link"></a>
+                    <img src="https://meo.comick.pictures/gODxg-m.jpg" alt="Manhwa 2">
+                <div class="manhwa-info">
+                    <h3 class="manhwa-title">Revenge of the Iron-Blooded Sword Hound</h3>
+                </div> 
+                </div>
+    
+                <div class="manhwa">
+                    <a href="https://comick.io/comic/02-omniscient-reader-s-viewpoint/0jLxN-chapter-0-en" class="manhwa-link"></a>
+                    <img src="https://meo.comick.pictures/p7j8l-m.jpg" alt="Manhwa 2">
+                <div class="manhwa-info">
+                    <h3 class="manhwa-title">Omniscient Reader's Viewpoint</h3>
+                </div> 
+                </div>
+    
+                <div class="manhwa">
+                    <a href="https://comick.io/comic/02-damn-reincarnation/Dpraw9eb-chapter-1-en" class="manhwa-link"></a>
+                    <img src="https://meo.comick.pictures/o0ovy-m.jpg" alt="Manhwa 2">
+                <div class="manhwa-info">
+                    <h3 class="manhwa-title">Damn Reincarnation</h3>
+                </div> 
+                </div>
+    
+                <div class="manhwa">
+                    <a href="https://comick.io/comic/01-mercenary-enrollment/iTMLX5EE-chapter-0-en" class="manhwa-link"></a>
+                    <img src="https://meo.comick.pictures/rxG82.jpg" alt="Manhwa 2">
+                <div class="manhwa-info">
+                    <h3 class="manhwa-title">Mercenary Enrollment</h3>
+                </div> 
+                </div>
+    
+                <div class="manhwa">
+                    <a href="https://comick.io/comic/00-player-who-returned-10-000-years-later/v3MxJaHbGpdMGJ-chapter-1-en" class="manhwa-link"></a>
+                    <img src="https://meo.comick.pictures/7qdXk-m.jpg" alt="Manhwa 2">
+                <div class="manhwa-info">
+                    <h3 class="manhwa-title">Player Who Returned 10,000 Years Later</h3>
+                </div> 
+                </div>
+    
+                <div class="manhwa">
+                    <a href="#" class="manhwa-link"></a>
+                    <img src="https://meo.comick.pictures/MRpQQ-641aabf1-c6b9-4f7c-a812-a566d4c01ca8-m.jpg" alt="Manhwa 2">
+                <div class="manhwa-info">
+                    <h3 class="manhwa-title">I’m the Max-Level Newbie</h3>
+                </div> 
+                </div>
+    
+                <div class="manhwa">
+                    <a href="#" class="manhwa-link"></a>
+                    <img src="https://meo.comick.pictures/mnWxYo-m.jpg" alt="Manhwa 2">
+                <div class="manhwa-info">
+                    <h3 class="manhwa-title">The Greatest Estate Developer</h3>
+                </div> 
+                </div>
+    
+                <div class="manhwa">
+                    <a href="#" class="manhwa-link"></a>
+                <img src="https://meo.comick.pictures/73yqk-m.jpg" alt="Manhwa 2">
+                <div class="manhwa-info">
+                    <h3 class="manhwa-title">The Swordmaster's Son</h3>
+                </div> 
+    
+                </div>
+                <div class="manhwa">
+                    <a href="#" class="manhwa-link"></a>
+                <img src="https://meo.comick.pictures/N67Brv.jpg" alt="Manhwa 2">
+                <div class="manhwa-info">
+                    <h3 class="manhwa-title">The Academy's Genius Swordsman</h3>
+                </div> 
+    
+                </div>
+                <div class="manhwa">
+                    <a href="#" class="manhwa-link"></a>
+                <img src="https://meo.comick.pictures/ze6K4-m.jpg" alt="Manhwa 2">
+                <div class="manhwa-info">
+                    <h3 class="manhwa-title">Nano Machine</h3>
+                </div> 
+    
+                </div>
+                <div class="manhwa">
+                    <a href="#" class="manhwa-link"></a>
+                <img src="https://tse1.mm.bing.net/th?q=trash%20of%20the%20count%27s%20family%20chapter%2093" alt="Manhwa 2">
+                <div class="manhwa-info">
+                    <h3 class="manhwa-title">Lout of Count's Family</h3>
+                </div> 
+    
+                </div>
+            </div>
+            </div>
+            <button class="next" onclick="scrollManhwas('next')">&#10095;</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
